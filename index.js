@@ -1,3 +1,7 @@
+require("http").createServer((req, res) => {
+  res.end("Bot alive");
+}).listen(3000);
+
 console.log("arrancando...");
 const { Client, GatewayIntentBits } = require('discord.js');
 const util = require('minecraft-server-util');
